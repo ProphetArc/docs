@@ -1,4 +1,4 @@
-# Graph Editing
+# Waypointing
 
 ## Brief Information
 
@@ -28,45 +28,45 @@ The graph editor is not a separate program, it is included in the bot DLL (or .s
 
 The following Graph commands are available:
 
-| Command | Description |
-|---------|-------------|
-| `yb g on` | Turns on displaying of nodes |
-| `yb g off` | Turns off displaying of nodes |
-| `yb g on auto` | Turns on auto nodes placement setting |
-| `yb g off auto` | Turns off auto nodes placement setting |
-| `yb g on models` | Turns on the player models rendering on spawn points |
-| `yb g off models` | Turns off the player models rendering on spawn points |
-| `yb g on noclip` | Turns on nodes editing with noclip cheat |
-| `yb g off noclip` | Turns off nodes editing with noclip cheat |
-| `yb g add` | Adds a node at the current player location. A Menu will pop up where you have to select the different types of nodes |
-| `yb g addbasic` | Adds basic nodes on map, like spawn points, goals and ladders |
-| `yb g cache` | Remember the nearest node to the player |
-| `yb g clean` | Cleans useless path connections from all or single node |
-| `yb g delete` | Deletes the node nearest to the player |
-| `yb g erase` | Removes the graph and bot experience files from hard drive |
-| `yb g flags` | Allows you to manually add/remove Flags to a node |
-| `yb g setradius x` | Manually sets the Wayzone Radius for this node to value x |
-| `yb g teleport x` | Teleports player to node index specified in value x |
-| `yb g stats` | Shows the number of different nodes you did already set |
-| `yb g fileinfo` | Shows basic information about graph file |
-| `yb g adjust_height` | Modifies all the graph nodes height (z-component) with specified offset |
-| `yb g check` | Checks if all node connections are valid |
-| `yb g load` | Loads the nodes from a graph file |
-| `yb g save` | Saves the current nodes to a file |
-| `yb g save nocheck` | Saves the current nodes to a file without validating |
-| `yb g upload` | Uploads created graph file to graph database |
-| `yb g menu` | Show the graph editor menu. Also available via alias `yb graphmenu` |
-| `yb g path_set_autopath` | Opens menu for setting autopath maximum distance |
-| `yb g path_create` | Opens menu for path creation |
-| `yb g path_delete` | Delete path from cached (or faced) to nearest node |
-| `yb g path_create_in` | Creating incoming path connection from faced (or cached) to nearest node |
-| `yb g path_create_out` | Creating outgoing path connection from nearest to faced (or cached) node |
-| `yb g path_create_both` | Creating both-ways path connection between faced (or cached) and nearest node |
-| `yb g path_create_jump` | Creating outgoing jumping path connection from nearest to faced (or cached) node |
-| `yb g path_clean` | Clears connections of all types from the node |
-| `yb g iterate_camp` | Allows to go through all camp points on map |
-| `yb g acquire_editor` | Acquires rights to edit graph on dedicated server |
-| `yb g release_editor` | Releases graph editing rights |
+| Command                  | Description                                                                                                          |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| `yb g on`                | Turns on displaying of nodes                                                                                         |
+| `yb g off`               | Turns off displaying of nodes                                                                                        |
+| `yb g on auto`           | Turns on auto nodes placement setting                                                                                |
+| `yb g off auto`          | Turns off auto nodes placement setting                                                                               |
+| `yb g on models`         | Turns on the player models rendering on spawn points                                                                 |
+| `yb g off models`        | Turns off the player models rendering on spawn points                                                                |
+| `yb g on noclip`         | Turns on nodes editing with noclip cheat                                                                             |
+| `yb g off noclip`        | Turns off nodes editing with noclip cheat                                                                            |
+| `yb g add`               | Adds a node at the current player location. A Menu will pop up where you have to select the different types of nodes |
+| `yb g addbasic`          | Adds basic nodes on map, like spawn points, goals and ladders                                                        |
+| `yb g cache`             | Remember the nearest node to the player                                                                              |
+| `yb g clean`             | Cleans useless path connections from all or single node                                                              |
+| `yb g delete`            | Deletes the node nearest to the player                                                                               |
+| `yb g erase`             | Removes the graph and bot experience files from hard drive                                                           |
+| `yb g flags`             | Allows you to manually add/remove Flags to a node                                                                    |
+| `yb g setradius x`       | Manually sets the Wayzone Radius for this node to value x                                                            |
+| `yb g teleport x`        | Teleports player to node index specified in value x                                                                  |
+| `yb g stats`             | Shows the number of different nodes you did already set                                                              |
+| `yb g fileinfo`          | Shows basic information about graph file                                                                             |
+| `yb g adjust_height`     | Modifies all the graph nodes height (z-component) with specified offset                                              |
+| `yb g check`             | Checks if all node connections are valid                                                                             |
+| `yb g load`              | Loads the nodes from a graph file                                                                                    |
+| `yb g save`              | Saves the current nodes to a file                                                                                    |
+| `yb g save nocheck`      | Saves the current nodes to a file without validating                                                                 |
+| `yb g upload`            | Uploads created graph file to graph database                                                                         |
+| `yb g menu`              | Show the graph editor menu. Also available via alias `yb graphmenu`                                                  |
+| `yb g path_set_autopath` | Opens menu for setting autopath maximum distance                                                                     |
+| `yb g path_create`       | Opens menu for path creation                                                                                         |
+| `yb g path_delete`       | Delete path from cached (or faced) to nearest node                                                                   |
+| `yb g path_create_in`    | Creating incoming path connection from faced (or cached) to nearest node                                             |
+| `yb g path_create_out`   | Creating outgoing path connection from nearest to faced (or cached) node                                             |
+| `yb g path_create_both`  | Creating both-ways path connection between faced (or cached) and nearest node                                        |
+| `yb g path_create_jump`  | Creating outgoing jumping path connection from nearest to faced (or cached) node                                     |
+| `yb g path_clean`        | Clears connections of all types from the node                                                                        |
+| `yb g iterate_camp`      | Allows to go through all camp points on map                                                                          |
+| `yb g acquire_editor`    | Acquires rights to edit graph on dedicated server                                                                    |
+| `yb g release_editor`    | Releases graph editing rights                                                                                        |
 
 To use the graph commands, you will have to use the console. Use the `~` key to bring down the console. Enter the console commands that you wish, then use the `~` key again to return to the game.
 
@@ -110,8 +110,8 @@ Also you can install the E-BOT (EWP) waypoints in the `*gamedir*/addons/yapb/dat
 
 Where `*gamedir*` is the path to the game directory, for example:
 
-- `D:\Steam\steamapps\common\Half-Life\cstrike` is the Counter-Strike 1.6 folder
-- `D:\Steam\steamapps\common\Half-Life\czero` is the Counter-Strike Condition Zero folder
+* `D:\Steam\steamapps\common\Half-Life\cstrike` is the Counter-Strike 1.6 folder
+* `D:\Steam\steamapps\common\Half-Life\czero` is the Counter-Strike Condition Zero folder
 
 ### Graph Editor Overview
 
@@ -125,4 +125,4 @@ Node practice data shows index number of node and the damage value taken from it
 
 White arrows are pointing to your faced node (on which you point your crosshair). Yellow arrows are pointing to your cached node.
 
-![Graph Editor viewport](../images/graph_editor_overview.png)
+![Graph Editor viewport](../.gitbook/assets/graph_editor_overview.png)
